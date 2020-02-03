@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Design</title>
+    <meta name="author" content="Kevin Kranenburg - www.kevinkranenburg.nl" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("klok").innerHTML = h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </head>
+
+  <body onload="startTime()">
+    <div class="mobiel">
+      <div id="klok"></div>
+      <div class="achtergrond"></div>
+
+      <a
+        class="fa fa-ellipsis-h menu-icon"
+        style="font-size:36px"
+        href="menu.html"
+      ></a>
+
+      <a
+        class="fa fa-user-o profiel-icon"
+        style="font-size:36px"
+        href="menu.html"
+      ></a>
+      <div class="circle-profiel"></div>
+
+      <div class="patient-achtergrond">
+        <div class="img-field">
+          <img class="tand-img" src="afb/tand3.png" alt="tand1" />
+        </div>
+
+        <div class="knoppen">
+          <a
+            class="fa fa-reply terug-knop"
+            style="font-size:36px"
+            href="tandenpoetsen2.html"
+          ></a>
+          <p class="aantal-taak">3 / 4</p>
+          <a
+            class="fa fa-share door-knop"
+            style="font-size:36px"
+            href="tandenpoetsen4.html"
+          ></a>
+        </div>
+
+        <div class="text-field">
+          <p class="instructie-text">Poets ook de onderste tanden.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p class="footer-text">&copy; Kevin Kranenburg</p>
+      </div>
+    </div>
+  </body>
+</html>

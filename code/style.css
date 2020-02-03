@@ -1,0 +1,605 @@
+/* JA IK WEET DAT JE NOOIT POSITION: ABSOLUTE MOET GEBRUIKEN MAAR HET WAS MAKKELIJK EN HET WERKT, SORRY :-) */
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* klokje */
+#klok {
+  position: absolute;
+  left: 810px;
+  top: 155px;
+}
+/* Midden van beeld */
+.mobiel {
+  width: 375px;
+  height: 667px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+
+/* Vormen links, rechts en login */
+.vierkant-links {
+  width: 200px;
+  height: 70px;
+  background: #728177;
+  border-radius: 0px 50px 50px 0px;
+  margin-top: -40px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.vierkant-links--small {
+  width: 150px;
+  height: 70px;
+  background: #728177;
+  border-radius: 0px 50px 50px 0px;
+  margin-top: 120px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.vierkant-rechts {
+  width: 200px;
+  height: 70px;
+  background: #728177;
+  border-radius: 50px 0px 0px 50px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.vierkant-rechts--small {
+  width: 150px;
+  height: 70px;
+  background: #728177;
+  border-radius: 50px 0px 0px 50px;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.vierkant-links--login {
+  width: 320px;
+  height: 110px;
+  background: #728177;
+  border-radius: 0px 50px 50px 0px;
+  margin-top: 160px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.vierkant-links--small--login {
+  width: 150px;
+  height: 70px;
+  background: #728177;
+  border-radius: 0px 50px 50px 0px;
+  margin-top: 100px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* text field */
+.input-1 {
+  left: 30px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  border: none;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.input-2 {
+  left: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* user en inlog icon */
+.user-icon {
+  top: 5px;
+  left: 10px;
+  position: relative;
+  color: white;
+}
+
+.lock-icon {
+  top: 5px;
+  left: 10px;
+  position: relative;
+  color: white;
+}
+
+/* circle inlog */
+.circle-inlog {
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  position: absolute;
+  top: 457px;
+  left: 940px;
+  border-radius: 50px;
+  border: 2px solid #728177;
+}
+
+.inlog-arrow {
+  position: absolute;
+  top: 477px;
+  left: 960px;
+  z-index: 1;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Grijze achtergrond */
+.achtergrond {
+  width: 375px;
+  height: 600px;
+  background: #f8f8f8;
+  bottom: 141px;
+  position: absolute;
+  border-radius: 30px 30px 5px 5px;
+}
+
+/* Main footer */
+.footer {
+  text-align: center;
+  background-color: #728177;
+  width: 375px;
+  height: 60px;
+  position: absolute;
+  bottom: 141px;
+  border-radius: 20px 20px 5px 5px;
+  color: white;
+}
+
+.footer-text {
+  padding: 5px;
+}
+
+/* Menu balken */
+.keuze-balk--1 {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  background-color: #728177;
+  bottom: 550px;
+  left: 690px;
+  border-radius: 0px 30px 0px 30px;
+  border: 3px solid #a1b4a7;
+  color: white;
+  text-align: center;
+}
+
+.keuze-balk--2 {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  background-color: #728177;
+  bottom: 450px;
+  left: 690px;
+  border-radius: 0px 30px 0px 30px;
+  border: 3px solid #a1b4a7;
+  color: white;
+  text-align: center;
+}
+
+.keuze-balk--3 {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  background-color: #728177;
+  bottom: 350px;
+  left: 690px;
+  border-radius: 0px 30px 0px 30px;
+  border: 3px solid #a1b4a7;
+  color: white;
+  text-align: center;
+}
+
+.titel-text {
+  text-align: center;
+  bottom: 650px;
+  position: absolute;
+  left: 745px;
+  color: #728177;
+}
+
+/* Profiel icon */
+.circle-profiel {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  position: absolute;
+  bottom: 747px;
+  left: 960px;
+  border-radius: 50px;
+  border: 2px solid gray;
+}
+
+.profiel-icon {
+  top: 15px;
+  left: 319px;
+  position: relative;
+  color: gray;
+  z-index: 1;
+}
+
+.keuze-balk--text {
+  top: 30%;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.menu-icon {
+  color: gray;
+  left: 665px;
+  top: 140px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.zoek-patient {
+  left: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  top: 90px;
+  border: 2px solid #728177;
+}
+
+/* Heel veel lijke code voor patient stlyling */
+.patient-text {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  text-decoration: none;
+}
+
+.patient-1--balk {
+  width: 200px;
+  height: 60px;
+  background-color: #728177;
+  border: 3px solid #a1b4a7;
+  position: absolute;
+  left: 780px;
+  top: 300px;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.patient-2--balk {
+  width: 200px;
+  height: 60px;
+  background-color: #728177;
+  border: 3px solid #a1b4a7;
+  position: absolute;
+  left: 780px;
+  top: 410px;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.patient-3--balk {
+  width: 200px;
+  height: 60px;
+  background-color: #728177;
+  border: 3px solid #a1b4a7;
+  position: absolute;
+  left: 780px;
+  top: 520px;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.patient-4--balk {
+  width: 200px;
+  height: 60px;
+  background-color: #728177;
+  border: 3px solid #a1b4a7;
+  position: absolute;
+  left: 780px;
+  top: 630px;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.patient-1--vierkant {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid #728177;
+  position: absolute;
+  border-radius: 0px 20px 0px 20px;
+  top: 280px;
+  left: 700px;
+  z-index: 1;
+}
+
+.patient-2--vierkant {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid #728177;
+  position: absolute;
+  border-radius: 0px 20px 0px 20px;
+  top: 390px;
+  left: 700px;
+  z-index: 1;
+}
+
+.patient-3--vierkant {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid #728177;
+  position: absolute;
+  border-radius: 0px 20px 0px 20px;
+  top: 500px;
+  left: 700px;
+  z-index: 1;
+}
+
+.patient-4--vierkant {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid #728177;
+  position: absolute;
+  border-radius: 0px 20px 0px 20px;
+  top: 610px;
+  left: 700px;
+  z-index: 1;
+}
+
+.patient-icon {
+  position: relative;
+  left: 28%;
+  top: 30%;
+}
+
+.patient-achtergrond {
+  width: 250px;
+  height: 500px;
+  background-color: #728177;
+  border: 3px solid #a1b4a7;
+  border-radius: 0px 30px 0px 30px;
+  position: relative;
+  top: 7%;
+  left: 15%;
+}
+
+.patient-pf {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid #728177;
+  position: absolute;
+  border-radius: 0px 20px 0px 20px;
+  top: 15px;
+  left: -45px;
+  z-index: 1;
+}
+
+.patient-title {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.taken-knop {
+  color: #000;
+  background-color: white;
+  border-radius: 0px 30px 0px 30px;
+  height: 50px;
+  width: 180px;
+  position: relative;
+  left: 15%;
+  top: 20%;
+}
+
+.taken-title {
+  text-align: center;
+  position: relative;
+  top: 30%;
+  left: 35%;
+  color: #000;
+  text-decoration: none;
+}
+
+.taken-title--2 {
+  text-align: center;
+  position: relative;
+  top: 30%;
+  left: 20%;
+  color: #000;
+  text-decoration: none;
+}
+
+.kalender {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.taken-knop--2 {
+  color: #000;
+  background-color: white;
+  border-radius: 0px 30px 0px 30px;
+  height: 50px;
+  width: 180px;
+  position: relative;
+  left: 15%;
+  top: 25%;
+}
+
+.taken-knop--3 {
+  color: #000;
+  background-color: white;
+  border-radius: 0px 30px 0px 30px;
+  height: 50px;
+  width: 180px;
+  position: relative;
+  left: 15%;
+  top: 30%;
+}
+
+.taken-knop--4 {
+  color: #000;
+  background-color: white;
+  border-radius: 0px 30px 0px 30px;
+  height: 50px;
+  width: 180px;
+  position: relative;
+  left: 15%;
+  top: 35%;
+}
+
+.img-field {
+  background-color: white;
+  height: 180px;
+  width: 180px;
+  border-radius: 0px 30px 0px 30px;
+  position: relative;
+  top: 5%;
+  left: 15%;
+}
+
+.aantal-taak {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.door-knop {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  text-decoration: none;
+}
+
+.terug-knop {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  text-decoration: none;
+}
+
+.text-field {
+  background-color: white;
+  height: 100px;
+  width: 180px;
+  border-radius: 0px 30px 0px 30px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  text-align: center;
+}
+
+.tand-img {
+  height: 130px;
+  width: 160px;
+  position: absolute;
+  top: 10%;
+}
+
+.insturctie-text {
+  text-align: center;
+  position: absolute;
+}
+
+.goed-img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+.img-field--2 {
+  background-color: white;
+  height: 280px;
+  width: 180px;
+  border-radius: 0px 30px 0px 30px;
+  position: relative;
+  top: 5%;
+  left: 15%;
+  text-align: center;
+}
+
+.klaar-text--1 {
+  position: relative;
+  top: 70%;
+}
+
+.klaar-text--2 {
+  position: relative;
+  top: 71%;
+}
+
+.home-knop {
+  background-color: white;
+  height: 50px;
+  width: 180px;
+  border-radius: 0px 30px 0px 30px;
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  text-align: center;
+}
+
+.home-knop--button {
+  text-decoration: none;
+  position: absolute;
+  top: 25%;
+  color: #000;
+  left: 20%;
+}
